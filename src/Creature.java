@@ -11,4 +11,8 @@ public abstract class Creature extends Thing {
 	{
 		
 	}
+	
+//	public String toString(){
+//		super();
+//	}
 }
