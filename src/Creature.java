@@ -1,5 +1,10 @@
 public abstract class Creature extends Thing {
 	
+	public Creature(String name)
+	{
+		super(name);
+	}
+	
 	public void eat(Thing aThing)
 	{
 	
@@ -12,7 +17,5 @@ public abstract class Creature extends Thing {
 		
 	}
 	
-//	public String toString(){
-//		super();
-//	}
+
 }
