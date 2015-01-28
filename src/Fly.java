@@ -3,19 +3,29 @@ public class Fly extends Creature implements Flyer{
 
 	public Fly(String name) {
 		super(name);
-		// TODO Auto-generated constructor stub
-	}
+		}
 
 	@Override
 	public void move() {
-		// TODO Auto-generated method stub
+		
+		this.fly();
 		
 	}
 
 	@Override
 	public void fly() {
-		// TODO Auto-generated method stub
 		
+		System.out.println(super.toString() + " is buzzing around in flight.");
+	}
+	
+	public void eat(Thing aThing)
+	{
+		if(aThing.getClass().equals("Thing"))
+		{
+			super.eat(aThing);
+		}
+		else
+			System.out.println(super.toString() + " won't eat a "+ aThing);
 	}
 
 }
