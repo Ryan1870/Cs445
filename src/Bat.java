@@ -22,9 +22,9 @@ public class Bat extends Creature implements Flyer{
 		
 		if(aThing.getClass().getSimpleName().equals("Thing"))
 		{
-			System.out.println( this.getClass() + " " + this.getClass().getSimpleName() + " wont wat a " + aThing);
+			System.out.println( super.getName() + " " + this.getClass().getSimpleName() + " wont eat a " + aThing);
 		}
-		else if(aThing.getClass().equals("Creature"))
+		else if(aThing.getClass().getSimpleName().equals("Creature"))
 		{
 			super.eat(aThing);
 			

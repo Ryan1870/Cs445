@@ -20,7 +20,7 @@ public class Fly extends Creature implements Flyer{
 	
 	public void eat(Thing aThing)
 	{
-		if(aThing.getClass().equals("Thing"))
+		if(aThing.getClass().getSimpleName().equals("Thing"))
 		{
 			super.eat(aThing);
 		}
