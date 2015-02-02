@@ -29,7 +29,7 @@ public class TestCreature {
 			if(arry[j]!= null)
 				System.out.println(arry[j]);
 		}
-	
+	//new objects for creatue array
 	Bat bat1 = new Bat("BatName1");
 	Ant ant1 = new Ant("ant1");
 	Fly fly1 = new Fly("flyName1");
@@ -51,10 +51,11 @@ public class TestCreature {
 			if(carry[k]!= null)
 			{
 				
-				carry[k].eat(thg);
-				carry[k].eat(tig);
+				carry[k].eat(thg); //eating just a thing
+				carry[k].eat(tig); //eating a creature
 				carry[k].move();
 				carry[k].whatDidYouEat();
+				System.out.println("\n");//seperating by a new line for ease of reading
 			}
 		}
 	

@@ -3,7 +3,6 @@ public class Bat extends Creature implements Flyer{
 
 	public Bat(String name) {
 		super(name);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
@@ -24,7 +23,7 @@ public class Bat extends Creature implements Flyer{
 		{
 			System.out.println( super.getName() + " " + this.getClass().getSimpleName() + " wont eat a " + aThing);
 		}
-		else if(aThing.getClass().getSimpleName().equals("Creature"))
+		else if(aThing instanceof Creature)
 		{
 			super.eat(aThing);
 			

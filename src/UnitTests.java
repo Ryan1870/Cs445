@@ -8,11 +8,13 @@ import org.junit.*;
 
 public class UnitTests {
 
+	
 	Thing thf = new Thing("thingName");
 	Tiger tig = new Tiger("TestTiger");
 	Tiger tig2 = new Tiger("TestTiger2");
 	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 	private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
+	String temp;
 	
 	//@Test
 	//public void testTiger(){
@@ -41,7 +43,8 @@ public class UnitTests {
 	public void testTiger(){
 		
 		assertEquals(tig.getName(), "TestTiger");
+		//temp = tig.eat(thf);
+		//assertEquals(temp, "Tiger has just eaten a thingName");
 		
-		//assertEquals(tig.eat(thf), "Tiger has just eaten a thingName");
 	}
 }
